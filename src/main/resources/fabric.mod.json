@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "singulartreasure",
+	"version": "${version}",
+	"name": "The Singular Treasure - A One Piece Mod",
+	"description": "A One Piece Mod By FrostberryNStuff",
+	"authors": [
+		"FrostberryNStuff"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/singulartreasure/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "net.frostberrynstuff.singulartreasure.SingularTreasure"
+		],
+		"client": [
+			"net.frostberrynstuff.singulartreasure.SingularTreasureClient"
+		],
+		"fabric-datagen": [
+			"net.frostberrynstuff.singulartreasure.SingularTreasureDataGenerator"
+		]
+	},
+	"mixins": [
+		"singulartreasure.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.10",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
