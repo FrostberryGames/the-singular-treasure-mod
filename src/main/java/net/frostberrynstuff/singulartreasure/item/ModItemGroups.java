@@ -2,6 +2,7 @@ package net.frostberrynstuff.singulartreasure.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.frostberrynstuff.singulartreasure.SingularTreasure;
+import net.frostberrynstuff.singulartreasure.block.ModBlocks;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
@@ -16,6 +17,7 @@ public class ModItemGroups {
                     .icon(() -> new ItemStack(ModItems.SEAPRISMSTONE)).entries((displayContext, entries) -> {
                         entries.add(ModItems.SEAPRISMSTONE);
                         entries.add(ModItems.SEAPRISMINGOT);
+                        entries.add(ModBlocks.SEA_PRISM_BLOCK);
 
                     }).build());
 

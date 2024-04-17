@@ -2,6 +2,7 @@ package net.frostberrynstuff.singulartreasure;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.frostberrynstuff.singulartreasure.block.ModBlocks;
 import net.frostberrynstuff.singulartreasure.item.ModItemGroups;
 import net.frostberrynstuff.singulartreasure.item.ModItems;
 import org.slf4j.Logger;
@@ -13,7 +14,11 @@ public class SingularTreasure implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+
 		ModItemGroups.registerItemGroups();
+
 		ModItems.registerModItems();
+
+		ModBlocks.registerModBlocks();
 	}
 }

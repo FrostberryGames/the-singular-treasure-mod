@@ -1,0 +1,6 @@
+{
+  "parent": "blocks/cube_all",
+  "textures": {
+    "all": "singulartreasure:block/sea_prism_block"
+  }
+}
