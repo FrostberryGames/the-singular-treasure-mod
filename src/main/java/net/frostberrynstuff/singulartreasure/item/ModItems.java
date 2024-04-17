@@ -13,10 +13,12 @@ import net.minecraft.util.Identifier;
 public class ModItems {
 
     public static final Item SEAPRISMSTONE = registerItem("sea_prism_stone", new Item(new FabricItemSettings()));
+    public static final Item SEAPRISMINGOT = registerItem("sea_prism_ingot", new Item(new FabricItemSettings()));
 
     private static void addItemsToItemGroup(FabricItemGroupEntries entries)
     {
         entries.add(SEAPRISMSTONE);
+        entries.add(SEAPRISMINGOT);
     }
 
     private static Item registerItem(String name, Item item)
