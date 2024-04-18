@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "singulartreasure:sea_prism_ingot"
+    }
+  },
+  "result": {
+    "item": "singulartreasure:sea_prism_block",
+    "count": 1
+  }
+}
