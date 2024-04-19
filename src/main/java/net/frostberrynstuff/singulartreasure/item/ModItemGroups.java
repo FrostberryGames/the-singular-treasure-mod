@@ -19,6 +19,8 @@ public class ModItemGroups {
                         entries.add(ModItems.SEAPRISMINGOT);
                         entries.add(ModBlocks.SEA_PRISM_BLOCK);
 
+                        entries.add(ModItems.GOMUGOMUNOMI);
+
                     }).build());
 
     public static void registerItemGroups() {
