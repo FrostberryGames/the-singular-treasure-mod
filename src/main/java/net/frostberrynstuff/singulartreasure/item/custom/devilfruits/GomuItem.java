@@ -23,7 +23,7 @@ public class GomuItem extends Item {
         {
             if (user instanceof ServerPlayerEntity)
             {
-                if (((IEntityDataSaver) user).getPersistentData().getBoolean("has_devil_fruit") == false)
+                if (((IEntityDataSaver) user).getPersistentData().getString("devil_fruit_name") == "none")
                 {
                     ClientPlayNetworking.send(ModPackets.ATE_DEVIL_FRUIT_ID, PacketByteBufs.create());
                     user.sendMessage(Text.literal("You ate the Gomu Gomu no Mi"));

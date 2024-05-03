@@ -18,8 +18,6 @@ public class RemovedDevilFruitC2SPacket {
         // Everything happens server side ONLY!!!
         player.getServerWorld().playSound(null, player.getBlockPos(), SoundEvents.ITEM_HONEY_BOTTLE_DRINK, SoundCategory.PLAYERS, 0.5f, player.getServerWorld().random.nextFloat() * 0.1F + 0.9F);
 
-        DevilFruitData.changeDevilFruit((IEntityDataSaver) player, "none");
-        player.sendMessage(Text.literal("DevilFruitHasDebug: " + ((IEntityDataSaver) player).getPersistentData().getString("devil_fruit_name")));
-        SingularTreasure.LOGGER.info(String.valueOf(((IEntityDataSaver) player).getPersistentData().getString("devil_fruit_name")));
+        DevilFruitData.changeDevilFruit(((IEntityDataSaver) player), "none");
     }
 }

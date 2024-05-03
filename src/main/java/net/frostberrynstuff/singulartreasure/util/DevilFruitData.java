@@ -13,10 +13,11 @@ public class DevilFruitData {
         NbtCompound nbt = player.getPersistentData();
 
         nbt.putString("devil_fruit_name", name);
+        String dfName = name;
 
-        syncDF(name, (ServerPlayerEntity) player);
+        syncDF(dfName, (ServerPlayerEntity) player);
 
-        return name;
+        return dfName;
     }
 
     public static void syncDF(String dfname, ServerPlayerEntity player)
